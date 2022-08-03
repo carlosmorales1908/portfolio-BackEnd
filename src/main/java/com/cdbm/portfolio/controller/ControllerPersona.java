@@ -49,7 +49,7 @@ public class ControllerPersona {
         persServ.borrarPersona(id);
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+    
     @GetMapping ("/persona/ver/todas")
     @ResponseBody
     public List<Persona> verPersonas(){
