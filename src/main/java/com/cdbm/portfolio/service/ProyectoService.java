@@ -3,10 +3,12 @@ package com.cdbm.portfolio.service;
 import com.cdbm.portfolio.model.Proyecto;
 import com.cdbm.portfolio.repository.ProyectoRepository;
 import java.util.List;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Transactional
 public class ProyectoService implements IProyectoService{
 
     @Autowired

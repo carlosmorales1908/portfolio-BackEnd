@@ -3,11 +3,13 @@ package com.cdbm.portfolio.service;
 import com.cdbm.portfolio.model.Experiencia_laboral;
 import com.cdbm.portfolio.repository.Experiencia_laboralRepository;
 import java.util.List;
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Transactional
 public class Experiencia_laboralService implements IExperiencia_laboral{
     
     @Autowired

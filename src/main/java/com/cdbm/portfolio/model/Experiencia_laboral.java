@@ -19,6 +19,7 @@ public class Experiencia_laboral {
     private Long id;
     
     private String empresa;
+    private String puesto;
     private String descripcion;
     private boolean esActual;
     
@@ -32,14 +33,16 @@ public class Experiencia_laboral {
     public Experiencia_laboral() {
     }
 
-    public Experiencia_laboral(Long id, String empresa, String descripcion, boolean esActual, Date fechaInicio, Date fechaFin) {
+    public Experiencia_laboral(Long id, String empresa, String puesto, String descripcion, boolean esActual, Date fechaInicio, Date fechaFin) {
         this.id = id;
         this.empresa = empresa;
+        this.puesto = puesto;
         this.descripcion = descripcion;
         this.esActual = esActual;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
     }
+
 
 
     

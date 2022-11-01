@@ -1,6 +1,5 @@
 package com.cdbm.portfolio.model;
 
-import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,7 +19,6 @@ public class Educacion {
     private String nivel;
     private String titulo;
     private boolean enCurso;
-    private boolean finalizado;
     private int anioFinalizado;
     
     
@@ -29,23 +27,15 @@ public class Educacion {
     }
 
     
-    
-    
-    public Educacion(Long id, String institucion, String nivel, String titulo, boolean enCurso, boolean finalizado, int anioFinalizado) {
+    public Educacion(Long id, String institucion, String nivel, String titulo, boolean enCurso, int anioFinalizado) {
         this.id = id;
         this.institucion = institucion;
         this.nivel = nivel;
         this.titulo = titulo;
         this.enCurso = enCurso;
-        this.finalizado = finalizado;
         this.anioFinalizado = anioFinalizado;
     }
     
 
-    
-
-    
-    
-    
     
 }
